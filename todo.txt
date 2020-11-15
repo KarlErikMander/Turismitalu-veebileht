@@ -1,0 +1,2 @@
+*slideshow js ei tööta kui ma ta lisan script impordiga
+*slideshowi pildid peaks olema samas resos muidu hakkavad elemendid hüppama

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Markna turismitalu</title>
+        <!-- Impordi sisse css file -->
+        <link rel="stylesheet" href="styles/mainpage.css">
+        <link rel="stylesheet" href="styles/mainpage_slideshow.css">
+        <!-- mingisugune info browsei jaoks -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/mainpage.js"></script>
+    </head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <!-- See on vajalik, et kõrval menüüd teha https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+        <div id="main">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <h1 class="title">Marknatalu</h1>
+                </div>
+                <div class="navbar-right">
+                    
+                    <div class="navbar-element">
+                        <div class="logo_container">
+                            <a href="https://www.instagram.com/marknaholidayhomes/" target="_blank" class="logo_link_insta"></a>    
+                        </div>
+                    </div>
+
+                    <div class="navbar-element">
+                        <div class="logo_container">
+                            <a href="https://www.facebook.com/marknatalu/" target="_blank" class="logo_link_fb"></a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="navbar-element">
+                        <div class="logo_container">
+                            <a href="https://neti.ee" class="logo_link_insta"></a>
+                                <div class="logo_image"></div>
+                        </div>
+                    </div>
+                    <div class="navbar-element">
+                        <div class="logo_container">
+                            <a href="https://neti.ee" class="logo_link_fb">
+                                <div class="logo_image"></div>
+                            </a>
+                        </div>
+                    </div>
+                -->
+                    <div class="navbar-element">
+                        <div class="side-menu-button-container">
+                            <span class="side_menu_button" onclick="openNav()">&#9776;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="image_border_fade" src="resources/img1.jpg" style="width:100%">
+                    <div class="text">Saunamaja mõnus terass</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="image_border_fade" src="resources/img2.jpg" style="width:100%">
+                    <div class="text">Pauliait</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="image_border_fade" src="resources/img3.jpg" style="width:100%">
+                    <div class="text">Pauliaida lõõgastav vaade</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <script>
+            // slideshow javascript
+            // näite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
+            var slideIndex = 0;
+            
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                
+                if (slideIndex > slides.length) {
+                     slideIndex = 1 
+                }
+                
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                
+                // Change image every 2 seconds
+                setTimeout(showSlides, 8000); 
+            }
+        </script>
+    </body>
+
+</html>
