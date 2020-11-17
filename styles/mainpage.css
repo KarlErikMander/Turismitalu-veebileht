@@ -1,9 +1,21 @@
-body {
+/*  Global css rules */
+html{
     /* Kui sa avad kõrval menüü siis see muudab ka tagatausta värvi */
-    background-color: rgb(208, 242, 213);
+    background-color:rgb(24, 26, 27);
     margin: 0px;
 }
-
+/* DEV: view all element borders, like a wireframe etc. */
+/* {
+    border: 1px solid black 
+}*/
+p{
+    text-align: left;
+    color: rgb(195, 245, 200);
+}
+body{
+    margin: 0px;
+}
+/*    Navbar */
 .navbar  {
     height: 100px;
     width: 100%;
@@ -15,7 +27,6 @@ body {
     vertical-align: baseline;
     height: 100%;
     padding-top: 25px;
-    /* width: 49%; */
 }
 
 .navbar .navbar-left {
@@ -44,10 +55,7 @@ body {
     font-size: 50px;
     font-weight: 900;
     float: left;
-    /* height: 100%; */
     position: relative;
-    /* left: 40px;
-    top: 20%; */
 }
 
 .logo_link_insta {
@@ -87,6 +95,83 @@ body {
 
 .side_menu_button {
     font-size: 30px;
+}
+/* Middle section                  */
+
+.middle_section{
+    width: 100%;
+    height: auto;
+}
+
+.grey_line{
+    width: 100%;
+    border: gray 1px solid;
+    margin: 0px;
+}
+.house_container{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.text_container{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.middle_title{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.image_container{
+    border: 2px solid rgb(0, 127,14);
+    margin: 0%;
+    padding: 2%;
+    height: 100%;
+}
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.linkbox {
+    margin-top: 2%;
+    float: left;
+    border: 1px solid rgb(0, 127,14);
+    color:rgb(195, 245, 200);
+    text-decoration: none;
+    padding:0.5%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+.linkbox:hover, .linkbox:focus, .linkbox:active {
+    background-color: rgba(211, 250, 208, 0.795);;
+    color: white;
+  }
+
+/*  Bottom_section css*/
+
+.bottom_section{
+    background-color: rgb(0, 127,14);
+    width: 100%;
+    height: auto;
+}
+.contactinfo_container p{
+    text-align: left;
+    color: rgb(195, 245, 200);
+    margin: 0%;
+    text-align: center;
+}
+.contactinfo_container{
+    width: 100%;
+    margin:0 auto;
 }
 
 
@@ -140,7 +225,3 @@ body {
     .sidenav a {font-size: 18px;}
 }
 
-/* DEV: view all element borders, like a wireframe etc. */
-/* {
-     border: 1px solid black 
-}*/
