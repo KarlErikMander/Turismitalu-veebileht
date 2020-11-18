@@ -5,10 +5,13 @@
 
 /*    Navbar */
 .navbar  {
+    background-color:rgb(0, 127,14);
     height: 100px;
     width: 100%;
 }
-
+.navbar .title{
+    color:rgb(255,255,255);
+}
 .navbar .navbar-left,
 .navbar .navbar-right {
     display: inline-block;
@@ -35,7 +38,12 @@
     margin-top: 10px;
 }
 
-
+.navbar-burger-button-container {
+    color:rgb(255,255,255);
+    width: 40px;
+    cursor:pointer;
+    padding-left: 10px;
+}
 
 .logo_link_insta {
     display: inline-block;
@@ -66,15 +74,7 @@
 }
 
 
-.side-menu-button-container {
-    width: 40px;
-    cursor:pointer;
-    padding-left: 10px;
-}
 
-.side_menu_button {
-    font-size: 30px;
-}
 /* Middle section                  */
 
 .middle_section{
@@ -149,54 +149,4 @@
     margin:0 auto;
 }
 
-
-/* Sidemenu css */
-/* The side navigation menu */
-.sidenav {
-    width: 0; /* 0 width - change this with JavaScript */
-    height: 100%; /* 100% Full-height */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    background-color: rgb(66, 175, 82); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    right: 0;
-}
-  
-  /* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-}
-  
-  /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-  /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-}
-  
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
