@@ -1,20 +1,8 @@
-/*  Global css rules */
-html{
-    /* Kui sa avad kõrval menüü siis see muudab ka tagatausta värvi */
-    background-color:rgb(24, 26, 27);
-    margin: 0px;
-}
 /* DEV: view all element borders, like a wireframe etc. */
 /* {
     border: 1px solid black 
 }*/
-p{
-    text-align: left;
-    color: rgb(195, 245, 200);
-}
-body{
-    margin: 0px;
-}
+
 /*    Navbar */
 .navbar  {
     height: 100px;
@@ -47,16 +35,7 @@ body{
     margin-top: 10px;
 }
 
-.title  {
-    vertical-align: baseline;
-    margin: 0px;
-    color:rgb(0, 127,14);
-    font-family: "Calibri";
-    font-size: 50px;
-    font-weight: 900;
-    float: left;
-    position: relative;
-}
+
 
 .logo_link_insta {
     display: inline-block;
@@ -103,11 +82,7 @@ body{
     height: auto;
 }
 
-.grey_line{
-    width: 100%;
-    border: gray 1px solid;
-    margin: 0px;
-}
+
 .house_container{
     width: 100%;
     height: auto;
