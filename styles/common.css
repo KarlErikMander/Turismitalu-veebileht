@@ -1,3 +1,8 @@
+/* DEV: view all element borders, like a wireframe etc. */
+* {
+    border: 1px solid black 
+}
+
 html{
     background-color:rgb(24, 26, 27);
     margin: 0px;
@@ -9,12 +14,12 @@ p{
 body{
     margin: 0px;
 }
-.title  {
+.title {
     vertical-align: baseline;
     margin: 0px;
     color:rgb(0, 127,14);
     font-family: "Calibri";
-    font-size: 50px;
+    font-size: 6vw;
     font-weight: 900;
     float: left;
     position: relative;
@@ -25,12 +30,93 @@ body{
     margin: 0px;
 }
 
+/*    Navbar */
+.navbar  {
+    background-color:rgb(0, 127,14);
+    height: 10vw;
+    max-height: 200px;
+    width: 100%;
+}
+.navbar .title{
+    color:rgb(255,255,255);
+}
+.navbar .navbar-left,
+.navbar .navbar-right {
+    display: inline-block;
+    vertical-align: baseline;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.navbar .navbar-left {
+    float:left;
+    padding:0vw;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-right {
+    height: 100%;
+    padding-right: 4vw;
+    padding-top: 0px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-element {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-burger-button-container {
+    color:rgb(255,255,255);
+    width: 7vw;
+    cursor:pointer;
+    max-width: 100%;
+    max-height: 100%;
+    height: 7vw;
+}
+
+.burger_button {
+    font-size: 5vw;
+}
+
+.logo_container {
+    position: relative;
+    display: inline-block;
+    width: 7vw;
+    height: 7vw;
+    vertical-align: top;
+    margin-left : 1vw;
+    margin-right : 1vw;
+}
+
+.logo_link_insta {
+    display: inline-block;
+	position: relative;
+    background-image: url("../resources/instagram logo.png");
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+}
+
+.logo_link_fb {
+    display: inline-block;
+	position: relative;
+    background-image: url("../resources/facebook logo.png");
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+}
+
+
+
+
 /* Sidemenu css */
 /* The side navigation menu */
 
-.burger_button {
-    font-size: 30px;
-}
+
 
 .sidenav {
     border:1px solid rgb(0, 127,14);
@@ -50,7 +136,8 @@ body{
 .sidenav a {
     padding: 8px 8px 8px 35px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 400;
     color: rgb(0, 127,14);
     display: block;
     transition: 0.3s;
@@ -63,11 +150,13 @@ body{
   
   /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5%;
     position: absolute;
-    top: 25px;
-    right: 20px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 1%;
+    right: 5%;
+    font-size: 100%;
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
