@@ -40,7 +40,59 @@
                 </div>
             </div>
         </div>
+
+        <div class = "middle_section">
+            <div class="top">
+                <div class="text_container">
+                    <p class="text">
+                        Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud nii, et Teil oleks võimalikult meeldiv ja mugav oma puhkust veeta.
+                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC, dušširuum ning avar terass, WIFI.
+                    </p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/1.jpg" style="width:100%">
+                        <div class="text">text1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/2.jpg" style="width:100%">
+                        <div class="text">text2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/3.jpg" style="width:100%">
+                        <div class="text">text3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        // slideshow javascript
+        // näite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
+        var slideIndex = 0;
+
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
 </body>
 
 </html>

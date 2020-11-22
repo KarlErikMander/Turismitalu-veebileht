@@ -1,15 +1,9 @@
-
-
-
-
-
 /* Middle section                  */
 
 .middle_section{
     width: 100%;
     height: auto;
 }
-
 
 .house_container{
     width: 100%;
@@ -19,11 +13,13 @@
     display: flex;
     flex-direction: column;
 }
+
 .text_container{
     width: 100%;
     height: auto;
     margin: 0px;
 }
+
 .middle_title{
     margin-top: 5%;
     margin-left: 3%;
@@ -35,6 +31,7 @@
     padding: 2%;
     height: 100%;
 }
+
 .image{
     max-width: 100%;
     max-height: 100%;
@@ -53,11 +50,12 @@
     transition-duration: 0.3s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-  }
+}
+
 .linkbox:hover, .linkbox:focus, .linkbox:active {
     background-color: rgba(211, 250, 208, 0.795);;
     color: white;
-  }
+}
 
 /*  Bottom_section css*/
 
