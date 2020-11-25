@@ -5,7 +5,7 @@
     <!-- Impordi sisse css file -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/mainpage.css">
-    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/slideshow_autoscrolling.css">
     <!-- mingisugune info browsei jaoks -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/common.js"></script>
@@ -15,10 +15,10 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="saunamaja.html">Saunamaja</a>
-        <a href="#">Pauliait</a>
-        <a href="#">Marknapere</a>
+        <a href="pauliait.html">Pauliait</a>
+        <a href="hinnad.html">Marknapere</a>
         <a href="kontakt.html">Kontakt</a>
-        <a href="#">Galerii</a>
+        <a href="galerii.html">Galerii</a>
     </div>
     <!-- See on vajalik, et kõrval menüüd teha https://www.w3schools.com/howto/howto_js_sidenav.asp -->
     <div id="main">
@@ -48,15 +48,15 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img class="image_border_fade" src="resources/img1.jpg" style="width:100%">
-                <div class="text">Saunamaja mõnus terass</div>
+                <div class="image_text">Saunamaja mõnus terass</div>
             </div>
             <div class="mySlides fade">
                 <img class="image_border_fade" src="resources/img2.jpg" style="width:100%">
-                <div class="text">Lõkkeplats</div>
+                <div class="image_text">Avar lõkkeplats</div>
             </div>
             <div class="mySlides fade">
                 <img class="image_border_fade" src="resources/img3.jpg" style="width:100%">
-                <div class="text">Pauliaida lõõgastav vaade</div>
+                <div class="image_text">Pauliaida lõõgastav vaade</div>
             </div>
         </div>
         <br>
@@ -64,6 +64,7 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
+
         </div>
         <div class="green_line"></div>
         <div class="middle_section">
@@ -85,9 +86,9 @@
                     </p>
                 </div>
                 <div class="image_container">
-                    <img src="resources/img1.jpg" alt="" class="image">
+                    <img src="resources/saunamaja/DSC_0303.jpg" alt="" class="image">
                 </div>
-                <a href="" class="link">
+                <a href="saunamaja.html" class="link">
                     <div class="linkbox">
                         Saunamaja kohta saab siit lisainfot
                     </div>
@@ -108,9 +109,9 @@
                     </p>
                 </div>
                 <div class="image_container">
-                    <img src="resources/img5.jpg" alt="" class="image">
+                    <img src="resources/pauliait/1.jpg" alt="" class="image">
                 </div>
-                <a href="" class="link">
+                <a href="pauliait.html" class="link">
                     <div class="linkbox">
                         Pauliaida kohta saab siit lisainfot
                     </div>
@@ -127,26 +128,14 @@
                     </p>
                 </div>
                 <div class="image_container">
-                    <img src="resources/img5.jpg" alt="" class="image">
+                    <img src="resources/uus maja.jpg" alt="" class="image">
                 </div>
-                <a href="" class="link">
-                    <div class="linkbox">
-                        Uuemaja kohta saab siit lisainfot
-                    </div>
                 </a>
             </div>
         </div>
         <div class="bottom_section">
             <div class="footer_container">
-                <p>Kontaktandmed</p>
-                <p>Markna talu</p>
-                <p>Tammiste küla</p>
-                <p>80047 Sauga vald</p>
-                <p>Pärnumaa</p>
-                <p>GPS: N 58 22´23´´</p>
-                <p>E 24 35´42´´</p>
-                <p>+372-53-456-053</p>
-                <p>info@marknatalu.ee</p>
+                <p>Marknatalu 2020</p>
             </div>
         </div>
     </div>

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Saunamaja</title>
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/saunamaja.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/interactive_slideshow.js"></script>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
     <div id="main">
         <div class="navbar">
             <div class="navbar-left">
-                <a href= "mainpage.html" class="title">Marknatalu</a>
+                <a href="mainpage.html" class="title">Marknatalu</a>
             </div>
             <div class="navbar-right">
                 <div class="navbar-element">
@@ -41,56 +44,92 @@
             </div>
         </div>
 
-        <div class = "middle_section">
+        <div class="middle_section">
             <div class="top">
-                <div class="text_container">
-                    <p class="text">
-                        Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud nii, et Teil oleks võimalikult meeldiv ja mugav oma puhkust veeta.
-                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC, dušširuum ning avar terass, WIFI.
-                    </p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/1.JPG" style="width:100%">
+                        <div class="text">Grillimiseks terass</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/8.JPG" style="width:100%">
+                        <div class="text">Kõik vajalik köögis</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/6.jpg" style="width:100%">
+                        <div class="text">Avar elutuba</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/DSC_0970.JPG" style="width:100%">
+                        <div class="text">Talviti hubane</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/7.jpg" style="width:100%">
+                        <div class="text">Puusaun</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="resources/saunamaja/12.jpg" style="width:100%">
+                        <div class="text">20 inimesele voodid</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
             <div class="middle">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img class="image_border_fade" src="resources/saunamaja/1.jpg" style="width:100%">
-                        <div class="text">text1</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="image_border_fade" src="resources/saunamaja/2.jpg" style="width:100%">
-                        <div class="text">text2</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="image_border_fade" src="resources/saunamaja/3.jpg" style="width:100%">
-                        <div class="text">text3</div>
-                    </div>
+                <div class="text_container">
+                    <p class="text">
+                        Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud nii, et Teil
+                        oleks võimalikult meeldiv ja mugav oma puhkust veeta.
+                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC,
+                        dušširuum ning avar terass, WIFI.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
-
     <script>
-        // slideshow javascript
-        // näite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
-        var slideIndex = 0;
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-        showSlides();
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-        function showSlides() {
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
-
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000);
+            dots[slideIndex - 1].className += " active";
         }
     </script>
 </body>
