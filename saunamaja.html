@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saunamaja</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Saunamaja</a>
+        <a href="#">Pauliait</a>
+        <a href="#">Marknapere</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Galerii</a>
+    </div>
+    <div id="main">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href= "mainpage.html" class="title">Marknatalu</a>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-element">
+                    <div class="logo_container">
+                        <a href="https://www.instagram.com/marknaholidayhomes/" target="_blank"
+                            class="logo_link_insta"></a>
+                    </div>
+                </div>
+                <div class="navbar-element">
+                    <div class="logo_container">
+                        <a href="https://www.facebook.com/marknatalu/" target="_blank" class="logo_link_fb"></a>
+                    </div>
+                </div>
+                <div class="navbar-element">
+                    <div class="navbar-burger-button-container">
+                        <span class="burger_button" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "middle_section">
+            <div class="top">
+                <div class="text_container">
+                    <p class="text">
+                        Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud nii, et Teil oleks võimalikult meeldiv ja mugav oma puhkust veeta.
+                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC, dušširuum ning avar terass, WIFI.
+                    </p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/1.jpg" style="width:100%">
+                        <div class="text">text1</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/2.jpg" style="width:100%">
+                        <div class="text">text2</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="image_border_fade" src="resources/saunamaja/3.jpg" style="width:100%">
+                        <div class="text">text3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // slideshow javascript
+        // näite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
+        var slideIndex = 0;
+
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+
+</html>

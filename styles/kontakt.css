@@ -1,0 +1,24 @@
+/* Map css */
+.map {
+    height: 40vh;
+    width: 100%;
+  }
+
+.text_container{
+    width: 100%;
+    height:auto;
+}
+
+.text_container .title{
+    margin: 2%;
+    margin-left: 3%;
+}
+
+.text_container .text{
+    margin:0%;
+    margin-left: 5%;
+    padding:1%;
+    font-size: 30px;
+
+}
+

@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Markna turismitalu</title>
     <!-- Impordi sisse css file -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/mainpage.css">
-    <link rel="stylesheet" href="styles/mainpage_slideshow.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
     <!-- mingisugune info browsei jaoks -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/mainpage.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="saunamaja.html">Saunamaja</a>
+        <a href="#">Pauliait</a>
+        <a href="#">Marknapere</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#">Galerii</a>
     </div>
     <!-- See on vajalik, et kõrval menüüd teha https://www.w3schools.com/howto/howto_js_sidenav.asp -->
     <div id="main">
         <div class="navbar">
             <div class="navbar-left">
-                <h1 class="title">Marknatalu</h1>
+                <a href= "mainpage.html" class="title">Marknatalu</a>
             </div>
             <div class="navbar-right">
-
                 <div class="navbar-element">
                     <div class="logo_container">
                         <a href="https://www.instagram.com/marknaholidayhomes/" target="_blank"
                             class="logo_link_insta"></a>
                     </div>
                 </div>
-
                 <div class="navbar-element">
                     <div class="logo_container">
                         <a href="https://www.facebook.com/marknatalu/" target="_blank" class="logo_link_fb"></a>
                     </div>
                 </div>
                 <div class="navbar-element">
-                    <div class="side-menu-button-container">
-                        <span class="side_menu_button" onclick="openNav()">&#9776;</span>
+                    <div class="navbar-burger-button-container">
+                        <span class="burger_button" onclick="openNav()">&#9776;</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="grey_line"></div>
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img class="image_border_fade" src="resources/img1.jpg" style="width:100%">
@@ -68,6 +65,7 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
+        <div class="green_line"></div>
         <div class="middle_section">
             <div class="title_container">
                 <h1 class="title middle_title">Markna majad</h1>
@@ -139,7 +137,7 @@
             </div>
         </div>
         <div class="bottom_section">
-            <div class="contactinfo_container">
+            <div class="footer_container">
                 <p>Kontaktandmed</p>
                 <p>Markna talu</p>
                 <p>Tammiste küla</p>
@@ -150,7 +148,6 @@
                 <p>+372-53-456-053</p>
                 <p>info@marknatalu.ee</p>
             </div>
-           
         </div>
     </div>
     <script>
