@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/kontakt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/kontakt.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <!-- Kõrvalmenüü div, mis hoiab linke -->
+    <div id="mySidenav" class="sidenav">
+        <!-- script mis paneb kõrvalmenüü akna kinni -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="saunamaja.html">Saunamaja</a>
+        <a href="#">Pauliait</a>
+        <a href="#">Marknapere</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#">Galerii</a>
+    </div>
+    <!-- Div, mis hoiab kõiki teisi elemente. Vajalik, et kõrvalmenüü töötaks -->
+    <div id="main">
+        <!-- Div, mis hoiab navigatsiooni riba. Selle sees on Marknatalu pealkiri
+             kõrvalmenüü nupp ja instagrami ja facebooki lingid. -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href= "mainpage.html" class="title">Marknatalu</a>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-element">
+                    <div class="logo_container">
+                        <a href="https://www.instagram.com/marknaholidayhomes/" target="_blank"
+                            class="logo_link_insta"></a>
+                    </div>
+                </div>
+                <div class="navbar-element">
+                    <div class="logo_container">
+                        <a href="https://www.facebook.com/marknatalu/" target="_blank" class="logo_link_fb"></a>
+                    </div>
+                </div>
+                <div class="navbar-element">
+                    <div class="navbar-burger-button-container">
+                        <span class="burger_button" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Div mis näitab google maps kaarti -->
+        <div id="googleMap" class="map"></div>
+        <div class="text_container">
+            <p class="title">
+                Kuidas meid leida?
+            </p>
+        </div>
+        <div class="text_container">
+            <p class="text">
+                Aadress: Markna talu, Tammiste küla, 80047, Sauga vald, Pärnumaa
+            </p>
+            <p class="text">
+                Gps    : N 58 22´23´´  E 24 35´42´´
+            </p>
+            <p class="text">
+                Telefon: +372 53456 053
+            </p>
+            <p class="text">
+                Email: info@marknatalu.ee
+            </p>
+            <p class="text">
+                Võtke kindlasti meiega ühendus, kui peaks küsimusi tekkima.
+            </p>
+        </div>
+    </div>
+    <!-- Impordi google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe4hZ4eG79buAyPXrW856I6DY1BVc6bA&callback=myMap"></script>
+
+</body>
+
+</html>
