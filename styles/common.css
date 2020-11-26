@@ -8,13 +8,14 @@ html{
     margin: 0px;
 }
 body{
+    font-family: Verdana, sans-serif;
     margin: 0px;
 }
 .title {
     margin: 0px;
     color:rgb(0, 127,14);
     font-family: "Calibri";
-    font-size: 6vh;
+    font-size: min(3vw, 45px);
     font-weight: 900;
     max-height: 7vmax;
     text-decoration: none;
@@ -26,13 +27,13 @@ body{
 }
 .text{
     text-align: left;
-    font-size: 4vh;
+    font-size: min(2vw, 23px);
     color: rgb(195, 245, 200);
     margin:0;
 }
 
 .linkbox {
-    font-size: 4vh;
+    font-size: min(2vw, 23px);
     margin-top: 2%;
     float: left;
     border: 1px solid rgb(0, 127,14);
@@ -53,8 +54,7 @@ body{
 /*    Navbar */
 .navbar  {
     background-color:rgb(0, 127,14);
-    height: 10vw;
-    max-height: 7vmax;
+    height: 7vw;
     width: 100%;
 }
 .navbar .title{
@@ -90,22 +90,22 @@ body{
 
 .navbar-burger-button-container {
     color:rgb(255,255,255);
-    width: 5vw;
-    height: 5vw;
+    width: min(5vw, 55px);
+    height: min(5vw, 55px);
     cursor:pointer;
     max-width: 100%;
     max-height: 100%;
 }
 
 .burger_button {
-    font-size: 4.5vw;
+    font-size: min(4vw, 50px);
 }
 
 .logo_container {
     position: relative;
     display: inline-block;
-    width: 5vw;
-    height: 5vw;
+    width: min(5vw, 55px);
+    height: min(5vw, 55px);
     vertical-align: top;
     margin-left : 1vw;
     margin-right : 1vw;
@@ -160,34 +160,36 @@ body{
     top: 0; /* Stay at the top */
     background-color: rgb(44, 47, 49); 
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 100px from the top */
+    padding-top: min(11vw,11%);
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     right: 0;
 }
   
   /* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 35px;
+.sidenav .menu_link {
+    padding: 3% 0% 3% 12%;
     text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: min(3vw, 30px);
     color: rgb(0, 127,14);
     display: block;
     transition: 0.3s;
 }
   
   /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav .menu_link:hover {
     color: #f1f1f1;
 }
   
   /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-
+    text-decoration: none;
+    font-size: 4vw;
+    color: rgb(0, 127,14);
+    padding: 3% 7% 3% 7%;
     margin-right: 5%;
     position: absolute;
     top: 1%;
-    right: 5%;
+    right: 6%;
 
 }
   
