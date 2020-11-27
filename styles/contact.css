@@ -15,10 +15,9 @@
 }
 
 .text_container .text{
-    margin:0%;
+    margin: 0%;
     margin-left: 5%;
-    padding:1%;
-    font-size: 30px;
-
+    padding: 1%;
+    padding-bottom: 1%;
 }
 
