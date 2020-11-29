@@ -1,3 +1,6 @@
+// See js fail on valideeritud https://esprima.org/demo/validate.html
+
+// Näite sain siit
 // https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-html
 function myMap() {
     // Marknatalu kordinaadid

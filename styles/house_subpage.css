@@ -1,11 +1,16 @@
-/* Middle section  css of page */
+/*  See css fail on valideeritud  https://jigsaw.w3.org/css-validator */
+
+/* Keskmine sektsioon */
+
 .middle_section{
     width: 100%;
     height: 50%;
 }
+
 .middle_section .text_container .title{
   padding-left:4%;
 }
+
 .middle_section .top{
     width: 100%;
 }
@@ -24,10 +29,12 @@
   margin-bottom:10%;
 }
 
+/* Kasutatava pildivahetus */
 
-/* Interactive slideshow css */
+.image_border_fade {
+  width:100%;
+}
 
-/* Next & previous buttons */
 .prev, .next {
   background-color: rgba(0,0,0,0.4);
   cursor: pointer;
@@ -35,21 +42,18 @@
   top: 50%;
   width: auto;
   margin-top: -5%;
-  padding: 16px;
+  padding: 2%;
   color: rgb(0, 127,14);
   font-weight: bold;
-  font-size: 30px;
+  font-size: min(3vw,30px);
   transition: 0.6s ease;
   user-select: none;
 }
-  
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
-  
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }

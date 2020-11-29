@@ -1,4 +1,5 @@
-/* Middle section                  */
+/* See css fail on valideeritud https://jigsaw.w3.org/css-validator */
+/* Keskmine sektsioon */
 
 .middle_section{
     width: 100%;
@@ -38,12 +39,11 @@
 }
 
 
-/* Slideshow css */
-
-/* https://stackoverflow.com/questions/2717127/gradient-borders*/
+/* Pildivahetuse css */
 .image_border_fade {
-    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+    width:100%;
 }
+
 
 
 

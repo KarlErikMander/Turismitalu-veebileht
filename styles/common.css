@@ -1,36 +1,43 @@
-/* DEV: view all element borders, like a wireframe etc. */
+/*  See css fail on valideeritud  https://jigsaw.w3.org/css-validator */
+
+/* Arendus valik: Näita kõikide elementide ääri */
 /* {
     border: 1px solid black 
 }*/
 
-/* Elements */
+/* CSS reeglid, mis kehtivad kõikidele html elementidele */
+
 html{
     background-color:rgb(24, 26, 27);
     margin: 0px;
 }
+
 body{
     font-family: Verdana, sans-serif;
     margin: 0px;
 }
 
-/* classes that are used everywhere */
+/* CSS Classid, mida kasutatakse erinevates sektsioonides */
+
 .bold{
     font-weight: bold;
 }
+
 .title {
     margin: 0px;
     color:rgb(0, 127,14);
-    font-family: "Calibri";
     font-size: min(3vw, 45px);
     font-weight: 900;
     max-height: 7vmax;
     text-decoration: none;
 }
+
 .green_line{
     width: 99.5%;
     border: rgb(0, 127,14) 1px solid;
     margin-top:2%;
 }
+
 .text{
     text-align: left;
     font-size: min(2vw, 23px);
@@ -46,25 +53,25 @@ body{
     color:rgb(195, 245, 200);
     text-decoration: none;
     padding:0.5%;
-    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
 }
+
 .linkbox:hover, .linkbox:focus, .linkbox:active {
     background-color: rgba(211, 250, 208, 0.795);
     color: white;
 }
 
 
-/*    Navbar */
+/* Navigatsiooni riba CSS */
+
 .navbar  {
     background-color:rgb(0, 127,14);
     height: 7vw;
     width: 100%;
 }
+
 .navbar .title{
     color:rgb(255,255,255);
     float: left;
@@ -137,7 +144,7 @@ body{
     height: inherit;
 }
 
-/*  Bottom_section css*/
+/*  Alumise sektsiooni CSS*/
 
 .bottom_section{
     background-color: rgb(0, 127,14);
@@ -156,26 +163,25 @@ body{
     padding-bottom : 2%;
 }
 
-/* Sidemenu css */
-/* The side navigation menu */
-
+/* Kõrvalmenüü css */
 
 
 .sidenav {
     border:1px solid rgb(0, 127,14);
-    width: 0; /* 0 width - change this with JavaScript */
-    height: 100%; /* 100% Full-height */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    width: 0; 
+    height: 100%; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
     background-color: rgb(44, 47, 49); 
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;
     padding-top: min(11vw,11%);
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.5s; 
     right: 0;
 }
   
-  /* The navigation menu links */
+  /* Navigatsiooni menüül olevate elementide CSS */
+
 .sidenav .menu_link {
     padding: 3% 0% 3% 12%;
     text-decoration: none;
@@ -185,12 +191,12 @@ body{
     transition: 0.3s;
 }
   
-  /* When you mouse over the navigation links, change their color */
+
 .sidenav .menu_link:hover {
     color: #f1f1f1;
 }
   
-  /* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
     text-decoration: none;
     font-size: 4vw;
@@ -203,15 +209,12 @@ body{
 
 }
   
-/* Slideshow common css */
+/* Muutva ja mitte muutva pildivahetuse CSS */
 
-
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 90%;
     position: relative;
@@ -219,7 +222,6 @@ body{
     margin-top: 2%;
 }
   
-  /* tekst mis on piltide peal */
 .image_text {
     color:rgb(156, 212, 163);
     font-size: min(2vw, 28px);
@@ -231,7 +233,6 @@ body{
     text-shadow: 2px 2px black;
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: min(2vw,25px);
@@ -247,19 +248,11 @@ body{
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-  
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}

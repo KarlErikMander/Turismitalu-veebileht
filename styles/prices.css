@@ -1,3 +1,6 @@
+/*  See css fail on valideeritud  https://jigsaw.w3.org/css-validator */
+
+/* Keskmine sektsioon */
 .text_container .title{
     margin: 5%;
     margin-top: 4%;
@@ -11,18 +14,22 @@
     width: 90%;
     border: 1px solid green;
 }
+
 .single_price_container{
     columns: 3;
     padding:1%;
 }
+
 .price_container p{
     padding: 1%;
     padding-left: 1.5%;
 }
+
 .text_container p{
     margin: 1%;
     margin-left:10%;
 }
+
 .text_container{
     margin-bottom: 2%;
 }

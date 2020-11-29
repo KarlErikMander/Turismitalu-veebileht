@@ -1,13 +1,13 @@
+<!-- https://validator.w3.org/ Valideeritud html fail -->
 <!DOCTYPE html>
-<html>
+<html lang="ee">
+
 <head>
     <title>Markna turismitalu</title>
-    <!-- Impordi sisse css file -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/mainpage.css">
-    <!-- mingisugune info browsei jaoks -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/common.js"></script>
 </head>
 
 <body>
@@ -19,11 +19,10 @@
         <a href="contact.html" class="menu_link">Kontakt</a>
         <a href="gallery.html" class="menu_link">Galerii</a>
     </div>
-    <!-- See on vajalik, et kõrval menüüd teha https://www.w3schools.com/howto/howto_js_sidenav.asp -->
     <div id="main">
         <div class="navbar">
             <div class="navbar-left">
-                <a href= "mainpage.html" class="title">Marknatalu</a>
+                <a href="mainpage.html" class="title">Marknatalu</a>
             </div>
             <div class="navbar-right">
                 <div class="navbar-element">
@@ -46,15 +45,15 @@
         </div>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img class="image_border_fade" src="resources/img1.jpg" style="width:100%">
+                <img class="image_border_fade" src="resources/saunamaja/img1.jpg" alt="Saunamaja mõnus terass">
                 <div class="image_text">Saunamaja mõnus terass</div>
             </div>
             <div class="mySlides fade">
-                <img class="image_border_fade" src="resources/img2.jpg" style="width:100%">
+                <img class="image_border_fade" src="resources/overall/img2.jpg" alt="Avar lõkkeplats">
                 <div class="image_text">Avar lõkkeplats</div>
             </div>
             <div class="mySlides fade">
-                <img class="image_border_fade" src="resources/img3.jpg" style="width:100%">
+                <img class="image_border_fade" src="resources/pauliait/img3.jpg" alt="Pauliaida lõõgastav vaade">
                 <div class="image_text">Pauliaida lõõgastav vaade</div>
             </div>
         </div>
@@ -72,14 +71,16 @@
             <div class="grey_line"></div>
             <div class="house_container">
                 <div>
-                    <h1 class = "title">Saunamaja</h1>
+                    <h1 class="title">Saunamaja</h1>
                 </div>
 
-                <div class = "text_container">
+                <div class="text_container">
                     <p class="text">
-                        Saunamaja Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud nii, et 
+                        Saunamaja Markna turismitalu palkidest ehitatud Saunamaja on hubane ja armas ning sisustatud
+                        nii, et
                         Teil oleks võimalikult meeldiv ja mugav oma puhkust veeta.
-                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC, dušširuum 
+                        Saunamajas on 2 magamistuba, kaminaga puhkeruum, saun, täisvarustuses köök, pesumasin, WC,
+                        dušširuum
                         ning avar terass, WIFI.
                     </p>
                 </div>
@@ -91,18 +92,21 @@
                         Saunamaja kohta saab siit lisainfot
                     </div>
                 </a>
-                
+
 
             </div>
             <div class="house_container">
                 <div>
-                    <h1 class = "title">Pauliait</h1>
+                    <h1 class="title">Pauliait</h1>
                 </div>
                 <div class="text_container">
                     <p class="text">
-                        Eelmise sajandi alguses ehitatud ait on renoveerimise käigus saanud kaasaegsed mugavused, kuid säilitanud 
-                        oma aidaliku väljanägemise ja sisu. Kunagise aida peremehe Pauli järgi on maja nimetatud Pauli Aidaks.
-                        Pauli Aidas on 2 magamistuba: roheline tuba ja punane tuba, kokku 10-le inimesele, kaminaga suur tuba-köök,
+                        Eelmise sajandi alguses ehitatud ait on renoveerimise käigus saanud kaasaegsed mugavused, kuid
+                        säilitanud
+                        oma aidaliku väljanägemise ja sisu. Kunagise aida peremehe Pauli järgi on maja nimetatud Pauli
+                        Aidaks.
+                        Pauli Aidas on 2 magamistuba: roheline tuba ja punane tuba, kokku 10-le inimesele, kaminaga suur
+                        tuba-köök,
                         WC, saun, dušširuum ja avar terrass, WIFI
                     </p>
                 </div>
@@ -117,7 +121,7 @@
             </div>
             <div class="house_container">
                 <div>
-                    <h1 class = "title">Uus maja</h1>
+                    <h1 class="title">Uus maja</h1>
                 </div>
                 <div class="text_container">
                     <p class="text">
@@ -126,9 +130,8 @@
                     </p>
                 </div>
                 <div class="image_container">
-                    <img src="resources/uus maja.jpg" alt="" class="image">
+                    <img src="resources/overall/uus_maja.jpg" alt="" class="image">
                 </div>
-                </a>
             </div>
         </div>
         <div class="bottom_section">
@@ -137,39 +140,8 @@
             </div>
         </div>
     </div>
-    <script>
-        // slideshow javascript
-        // näite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
-        var slideIndex = 0;
-
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-
-            // Change image every 2 seconds
-            setTimeout(showSlides, 8000);
-        }
-    </script>
+    <script src="js/common.js"></script>
+    <script src="js/non_interactable_slideshow.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,12 @@
+<!-- https://validator.w3.org/ This is valid html -->
 <!DOCTYPE html>
-<html>
-
+<html lang="ee">
 <head>
     <title>Saunamaja</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/house_subpage.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/common.js"></script>
 </head>
 
 <body>
@@ -51,32 +51,32 @@
             </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/1.JPG" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/1.JPG" alt ="Grillimiseks terass">
                     <div class="image_text">Grillimiseks terass</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/8.JPG" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/8.JPG" alt ="Kõik vajalik köögis">
                     <div class="image_text">Kõik vajalik köögis</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/6.jpg" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/6.jpg" alt ="Avar elutuba">
                     <div class="image_text">Avar elutuba</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/talv.JPG" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/talv.JPG" alt ="Talviti hubane">
                     <div class="image_text">Talviti hubane</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/7.jpg" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/7.jpg" alt ="Puusaun">
                     <div class="image_text">Puusaun</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="resources/saunamaja/12.jpg" style="width:100%">
+                    <img class="image_border_fade" src="resources/saunamaja/12.jpg" alt ="20 inimesele voodid">
                     <div class="image_text">20 inimesele voodid</div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -111,36 +111,8 @@
             </div>
         </a>
     </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script src="js/common.js"></script>
+    <script src="js/interactable_slideshow.js"></script>
 </body>
 
 </html>

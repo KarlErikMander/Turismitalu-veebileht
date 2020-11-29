@@ -1,17 +1,17 @@
+<!-- https://validator.w3.org/ Valideeritud html fail -->
 <!DOCTYPE html>
-<html>
+<html lang="ee">
+
 <head>
     <title>Kontakt</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/contact.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
 </head>
+
 <body>
-    <!-- Kõrvalmenüü div, mis hoiab linke -->
     <div id="mySidenav" class="sidenav">
-        <!-- script mis paneb kõrvalmenüü akna kinni -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="saunamaja.html" class="menu_link">Saunamaja</a>
         <a href="pauliait.html" class="menu_link">Pauliait</a>
@@ -19,13 +19,10 @@
         <a href="contact.html" class="menu_link">Kontakt</a>
         <a href="gallery.html" class="menu_link">Galerii</a>
     </div>
-    <!-- Div, mis hoiab kõiki teisi elemente. Vajalik, et kõrvalmenüü töötaks -->
     <div id="main">
-        <!-- Div, mis hoiab navigatsiooni riba. Selle sees on Marknatalu pealkiri
-             kõrvalmenüü nupp ja instagrami ja facebooki lingid. -->
         <div class="navbar">
             <div class="navbar-left">
-                <a href= "mainpage.html" class="title">Marknatalu</a>
+                <a href="mainpage.html" class="title">Marknatalu</a>
             </div>
             <div class="navbar-right">
                 <div class="navbar-element">
@@ -46,7 +43,6 @@
                 </div>
             </div>
         </div>
-        <!-- Div mis näitab google maps kaarti -->
         <div id="googleMap" class="map"></div>
         <div class="text_container">
             <p class="title">
@@ -58,7 +54,7 @@
                 Aadress: Markna talu, Tammiste küla, 80047, Sauga vald, Pärnumaa
             </p>
             <p class="text">
-                Gps    : N 58 22´23´´  E 24 35´42´´
+                Gps : N 58 22´23´´ E 24 35´42´´
             </p>
             <p class="text">
                 Telefon: +372 53456 053
@@ -76,8 +72,10 @@
             </div>
         </div>
     </div>
-    <!-- Impordi google map api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe4hZ4eG79buAyPXrW856I6DY1BVc6bA&callback=myMap"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/common.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCe4hZ4eG79buAyPXrW856I6DY1BVc6bA&callback=myMap"></script>
 
 </body>
 
