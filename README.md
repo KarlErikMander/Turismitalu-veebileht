@@ -89,12 +89,12 @@ telefoni vaade teha ja kergesti hallatav omaniku seaded.
 ## Kontakt
 
 Karl Erik Mander:
-[Email](mander.karl@gmail.com) 
-[Telefon](+372 59196262)
+[Email](mander.karl@gmail.com)  
+Telefon: +372 59196262 
 
 Meelis Rekker:
-[Email](mander.karl@gmail.com) 
-[Telefon](+372 59196262)
+[Email](fake.email@gmail.com)  
+Telefon: +372 puududb
 
 
 
