@@ -23,7 +23,7 @@
         <div class="top_section">
             <div class="navbar">
                 <div class="navbar-left">
-                    <a href="mainpage.html" class="title">Marknatalu</a>
+                    <a href="index.html" class="title">Marknatalu</a>
                 </div>
                 <div class="navbar-right">
                     <div class="navbar-element">
@@ -188,15 +188,14 @@
         </div>
     </div>
     </div>
-
-    <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <img src="" class="slide_image" id="slideImg" style="width:100%"> </div>
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="slide_container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="modal-content">
+                <img src="" class="slide_image" id="slideImg" style="width:100%"> </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
     </div>
     </div>
