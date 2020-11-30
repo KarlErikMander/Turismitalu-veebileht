@@ -102,11 +102,11 @@ function showSlides(n) {
     
     // Muuda pilti vastavalt, mis galerii lahti on
     if(current_gallery == "saunamaja"){
-        slide.src =  '../resources/saunamaja/' + images[n] ;
+        slide.src =  'resources/saunamaja/' + images[n] ;
     }else if(current_gallery == "pauliait"){
-        slide.src =  '../resources/pauliait/' + images[n];
+        slide.src =  'resources/pauliait/' + images[n];
     }else{
-        slide.src =  '../resources/overall/' + images[n] ;
+        slide.src =  'resources/overall/' + images[n] ;
     }
     
 
