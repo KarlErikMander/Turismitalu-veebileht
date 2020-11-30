@@ -1,0 +1,59 @@
+/*  See css fail on valideeritud  https://jigsaw.w3.org/css-validator */
+
+/* Keskmine sektsioon */
+
+.middle_section{
+    width: 100%;
+    height: 50%;
+}
+
+.middle_section .text_container .title{
+  padding-left:4%;
+}
+
+.middle_section .top{
+    width: 100%;
+}
+
+.middle_section .text_container{
+  padding:2%;
+}
+
+.middle_section .text_container .text{
+  padding:2%
+}
+
+.linkbox{
+  margin-left:4%;
+  margin-top:0%;
+  margin-bottom:10%;
+}
+
+/* Kasutatava pildivahetus */
+
+.image_border_fade {
+  width:100%;
+}
+
+.prev, .next {
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -5%;
+  padding: 2%;
+  color: rgb(0, 127,14);
+  font-weight: bold;
+  font-size: min(3vw,30px);
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}

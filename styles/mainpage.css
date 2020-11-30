@@ -1,0 +1,43 @@
+/* See css fail on valideeritud https://jigsaw.w3.org/css-validator */
+/* Keskmine sektsioon */
+
+.middle_section{
+    width: 100%;
+    height: auto;
+}
+
+.text{
+  padding: 3%;
+}
+.house_container{
+    width: 90%;
+    height: auto;
+    margin: 0px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.text_container{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.middle_title{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+/* Pildivahetuse css */
+.image_border_fade {
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+

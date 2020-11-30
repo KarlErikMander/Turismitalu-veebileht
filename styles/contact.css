@@ -1,0 +1,26 @@
+/* See css fail on valideeritud https://jigsaw.w3.org/css-validator */
+
+/* Google kaardi css */
+.map {
+    height: 40vh;
+    width: 100%;
+  }
+
+/* Keskmise sektsiooni css */
+.text_container{
+    width: 100%;
+    height:auto;
+}
+
+.text_container .title{
+    margin: 2%;
+    margin-left: 3%;
+}
+
+.text_container .text{
+    margin: 0%;
+    margin-left: 5%;
+    padding: 1%;
+    padding-bottom: 1%;
+}
+

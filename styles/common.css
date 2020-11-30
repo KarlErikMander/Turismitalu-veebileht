@@ -1,0 +1,266 @@
+/*  See css fail on valideeritud  https://jigsaw.w3.org/css-validator */
+
+
+/* CSS reeglid, mis kehtivad kõikidele html elementidele */
+
+html{
+    background-color:rgb(24, 26, 27);
+    margin: 0px;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+}
+
+/* CSS Classid, mida kasutatakse erinevates sektsioonides */
+
+.bold{
+    font-weight: bold;
+}
+
+.title {
+    margin: 0px;
+    color:rgb(0, 127,14);
+    font-size: min(3vw, 45px);
+    font-weight: 900;
+    max-height: 7vmax;
+    text-decoration: none;
+}
+
+.green_line{
+    width: 99.5%;
+    border: rgb(0, 127,14) 1px solid;
+    margin-top:2%;
+}
+
+.text{
+    text-align: left;
+    font-size: min(2vw, 23px);
+    color: rgb(195, 245, 200);
+    margin:0;
+}
+
+.linkbox {
+    font-size: min(2vw, 23px);
+    margin-top: 2%;
+    float: left;
+    border: 1px solid rgb(0, 127,14);
+    color:rgb(195, 245, 200);
+    text-decoration: none;
+    padding:0.5%;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.linkbox:hover, .linkbox:focus, .linkbox:active {
+    background-color: rgba(211, 250, 208, 0.795);
+    color: white;
+}
+
+.image_container{
+    border: 2px solid rgb(0, 127,14);
+    margin: 0%;
+    padding: 2%;
+    height: 100%;
+}
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Navigatsiooni riba CSS */
+
+.navbar  {
+    background-color:rgb(0, 127,14);
+    height: 7vw;
+    width: 100%;
+}
+
+.navbar .title{
+    color:rgb(255,255,255);
+    float: left;
+    position: relative;
+    vertical-align: baseline;
+
+}
+
+.navbar .navbar-left {
+    height: 100%;
+    float:left;
+    padding:0vw;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-right {
+    height: 100%;
+    padding-right: 4vw;
+    padding-top: 0px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-element {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-burger-button-container {
+    color:rgb(255,255,255);
+    width: min(5vw, 55px);
+    height: min(5vw, 55px);
+    cursor:pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.burger_button {
+    font-size: min(4vw, 50px);
+}
+
+.logo_container {
+    position: relative;
+    display: inline-block;
+    width: min(5vw, 55px);
+    height: min(5vw, 55px);
+    vertical-align: top;
+    margin-left : 1vw;
+    margin-right : 1vw;
+}
+
+.logo_link_insta {
+    display: inline-block;
+	position: relative;
+    background-image: url("../resources/instagram logo.png");
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+}
+
+.logo_link_fb {
+    display: inline-block;
+	position: relative;
+    background-image: url("../resources/facebook logo.png");
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+}
+
+/*  Alumise sektsiooni CSS*/
+
+.bottom_section{
+    background-color: rgb(0, 127,14);
+    width: 100%;
+}
+
+.footer_container p{
+    color: rgb(195, 245, 200);
+    margin: 0%;
+    text-align: center;
+}
+
+.footer_container{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom : 2%;
+}
+
+/* Kõrvalmenüü css */
+
+
+.sidenav {
+    border:1px solid rgb(0, 127,14);
+    width: 0; 
+    height: 100%; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    background-color: rgb(44, 47, 49); 
+    overflow-x: hidden;
+    padding-top: min(11vw,11%);
+    transition: 0.5s; 
+    right: 0;
+}
+  
+  /* Navigatsiooni menüül olevate elementide CSS */
+
+.sidenav .menu_link {
+    padding: 3% 0% 3% 12%;
+    text-decoration: none;
+    font-size: min(3vw, 30px);
+    color: rgb(0, 127,14);
+    display: block;
+    transition: 0.3s;
+}
+  
+
+.sidenav .menu_link:hover {
+    color: #f1f1f1;
+}
+  
+
+.sidenav .closebtn {
+    text-decoration: none;
+    font-size: 4vw;
+    color: rgb(0, 127,14);
+    padding: 3% 7% 3% 7%;
+    margin-right: 5%;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+
+}
+  
+/* Muutva ja mitte muutva pildivahetuse CSS */
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+}
+  
+.image_text {
+    color:rgb(156, 212, 163);
+    font-size: min(2vw, 28px);
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.dot {
+    cursor: pointer;
+    height: min(2vw,25px);
+    width: min(2vw,25px);
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
