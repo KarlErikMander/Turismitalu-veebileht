@@ -93,8 +93,8 @@ Karl Erik Mander:
 Telefon: +372 59196262 
 
 Meelis Rekker:
-[Email](fake.email@gmail.com)  
-Telefon: +372 puududb
+[Email](meelis.rekker@gmail.com)  
+Telefon: +372 53446276
 
 
 
