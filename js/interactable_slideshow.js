@@ -1,3 +1,4 @@
+// See js fail on valideeritud https://esprima.org/demo/validate.html
 // naite sain siit https://www.w3schools.com/howto/howto_js_slideshow.asp
 // Index, mis näitab, mis slide praegu on
 var slideIndex = 1;

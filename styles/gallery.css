@@ -47,12 +47,13 @@
 }
 
 .image:hover{
-    width: 98%;
-    height: 98%;
+  opacity: 0.8;
 }
 
 .image{
     display: block ;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 /* Modal */
