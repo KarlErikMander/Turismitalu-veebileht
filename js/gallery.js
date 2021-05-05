@@ -70,9 +70,9 @@ function currentSlide(n) {
 }
 
 // Varrid, mis hoiavad galeriis olevate piltide nimesi
-var saunamaja_images = ["1.jpg", "2.jpg" , "3.jpg" , "4.jpg" , "5.jpg" ,"6.jpg", "7.jpg", "8.jpg", "9.jpg", "12.jpg", "talv.jpg" ]
-var pauliait_images = ["1.jpg","DSC_0077.jpg", "DSC_0088.jpg", "DSC_0089.jpg", "DSC_0090.jpg", "DSC_0094.jpg", "DSC_0095.jpg", "DSC_0160.jpg", "DSC_0171.jpg", "DSC_0296.jpg", "DSC_0353.jpg", "DSC_0712.jpg", "DSC_0822.jpg", "DSC_1081.jpg"]
-var muu_images = ["DSC_0057.jpg","DSC_0085.JPG", "DSC_0202.JPG", "DSC_0207.JPG", "DSC_0358.JPG", "DSC_0374.JPG", "DSC_0770.JPG", "DSC_0772.JPG", "DSC_0811.JPG", "DSC_0848.JPG", "DSC_0941.JPG", "DSC_1184.JPG", "DSC_1186.JPG", "DSC_1186.JPG", "DSC_1452.JPG", "DSC_1457.JPG", "DSC_1786.JPG"]
+var saunamaja_images = ["1.JPG", "2.JPG" , "3.JPG" , "4.JPG" , "5.JPG" ,"6.JPG", "7.JPG", "8.JPG", "9.JPG", "12.JPG", "talv.JPG" ]
+var pauliait_images = ["1.JPG","DSC_0077.JPG", "DSC_0088.JPG", "DSC_0089.JPG", "DSC_0090.JPG", "DSC_0094.JPG", "DSC_0095.JPG", "DSC_0160.JPG", "DSC_0171.JPG", "DSC_0296.JPG", "DSC_0353.JPG", "DSC_0712.JPG", "DSC_0822.JPG", "DSC_1081.JPG"]
+var muu_images = ["DSC_0057.JPG","DSC_0085.JPG", "DSC_0202.JPG", "DSC_0207.JPG", "DSC_0358.JPG", "DSC_0374.JPG", "DSC_0770.JPG", "DSC_0772.JPG", "DSC_0811.JPG", "DSC_0848.JPG", "DSC_0941.JPG", "DSC_1184.JPG", "DSC_1186.JPG", "DSC_1186.JPG", "DSC_1452.JPG", "DSC_1457.JPG", "DSC_1786.JPG"]
 
 // Muuda slidi pilti
 function showSlides(n) {
